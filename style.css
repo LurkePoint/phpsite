@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.logo {
+    display: block;
+    width: 60px;
+    transition: 0.2s;
+}
+.logo:hover {
+    transform: scale(1.1, 1.1);
+}
+.header_block {
+    margin: auto;
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0px;
+}
+.header_block_logo {
+    display: block;
+    padding: 10px;
+    margin-right: 50px;
+}
+.header_menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.header_menu_item {
+    text-align: right;
+    font-size: 20px;
+    padding: 10px;
+}
+.header_menu_item a {
+    color: black;
+    text-decoration: none;
+}
+.header_menu_item a::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 3px;
+    background-color: black;
+    transition: 0.2s;
+}
+.header_menu_item a:hover::after {
+    width: 100%;
+}
+.main {
+   padding: 50px 0px;
+   max-width: 1170px;
+   margin: auto;
+}
+footer {
+    background-color: lightgreen;
+    height: 50px;
+    font-size: 25px;
+    padding: 10px;
+}
+.block_form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.form {
+    padding: 10px;
+    display: flex;
+    margin-bottom: 50px;
+    flex-direction: column;
+    width: 550px;
+}
+
+input {
+    font-size: 20px;
+    padding: 8px;
+    border: 2px solid #CADABA;
+    margin-bottom: 10px;
+    outline: none;
+    background: white;
+}
+button {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+   
+    outline: none;
+    cursor: pointer;
+    background-color: #71BC78;
+    color: white;
+}
+.main_kabinet {
+    margin: auto;
+    padding: 10px;
+    font-size: 20px;
+}
+.check {
+    font-size: 15px;
+    padding: 0;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.check_input {
+    margin-right: 10px;
+}
+.label_user {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0px;
+}
+.applications {
+   max-width: 1170px;
+   margin: auto;
+   padding: 10px;
+}
+
+.block_app img {
+   width: 100%;
+}
+.block_app {
+    font-size: 20px;
+    margin-bottom: 50px;
+    background-color: #b2f3db;
+    border-radius: 10px;
+    padding: 15px 8px;
+}
+.block_app_item {
+    padding: 10px;
+    max-width: 500px;
+}
+.form_pet {
+    padding: 10px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+}
+.pet {
+    font-size: 25px;
+    font-weight: 600;
+}
+.status {
+    font-size: 25px;
+    color: black;
+    font-weight: 600;
+}
+.active {
+    color: black;
+    background-color: #CADABA !important;
+}
+.block_pag {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+.block_pag a {
+    background-color: white;
+    border: 1px solid #CADABA;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 1px;
+}
+.msg_else {
+    margin-bottom: 50px;
+}
+
+.deleteApp {
+    background: white;
+    padding: 5px;
+    box-shadow: 1px 1px 1px 1px #8eddc0;
+    border-radius: 10px;
+    color: green;
+    margin-top: 10px;
+}
+.updateData {
+    background: white;
+    padding: 5px;
+    box-shadow: 1px 1px 1px 1px #8eddc0;
+    border-radius: 10px;
+    color: green;
+    margin-top: 10px;
+}
+.updateComplete {
+    background: white;
+    padding: 5px;
+    box-shadow: 1px 1px 1px 1px lightgreen;
+    border-radius: 10px;
+    color: green;
+    margin-top: 10px;
+}
+.fileGroom {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 1170px) {
+    .block_form {
+        justify-content: space-around;
+    }
+}
